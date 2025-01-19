@@ -125,9 +125,9 @@ gsap.from('.infoImg', {
     duration: 2,
     ease: "power2.inOut",
     scrollTrigger: {
-        trigger: ".featureOne",
-        start: 'top top',
-        end: '+=30%',
+        trigger: ".header",
+        start: 'top end',
+        end: '+=60%',
         scrub: true,
     }
 });
@@ -139,9 +139,9 @@ gsap.from('.infoBlock__right', {
     duration: 2,
     ease: "power2.inOut",
     scrollTrigger: {
-        trigger: ".featureOne",
-        start: 'top top',
-        end: '+=30%',
+        trigger: ".header",
+        start: 'end end',
+        end: '+=70%',
         scrub: true,
     }
 });
@@ -154,7 +154,7 @@ gsap.to('.infoLine', {
     scrollTrigger: {
         trigger: ".infoFone",
         start: 'top top',
-        end: '+=30%',
+        end: '+=100%',
         scrub: true,
     }
 });
@@ -166,8 +166,8 @@ gsap.from('.containerBlock', {
     ease: "power2.inOut",
     scrollTrigger: {
         trigger: ".infoFone",
-        start: 'center top',
-        end: '+=30%',
+        start: 'top top',
+        end: '+=50%',
         scrub: true,
     }
 });

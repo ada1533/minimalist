@@ -43,14 +43,16 @@ body{
         justify-content: space-between;
         align-items: center;
         padding: 0 43px;
-        padding-top: calc(var(--index) * 1.2);
+        padding-top: 30px;
+        width: 100%;
+        box-sizing: border-box;
 
         *{
             color: var(--color-dark);
         }
 
         .nav_span{
-            width: calc(var(--index) * 19);
+            width: 500px;
             display: flex;
             justify-content: space-around;
 
@@ -93,7 +95,7 @@ body{
     .header{
         display: flex;
         justify-content: space-between;
-        padding: calc(var(--index) * 3.5) 9.4%;
+        padding: 180px 9.4%;
     
         .header_image{
             width: 100%;
@@ -111,11 +113,9 @@ body{
             }
             .header_title__bottom{
                 display: flex;
-                align-items: center;
-                width: 80%;
                 margin-top: 100px;
     
-                & > button{
+                .header_button{
                     padding: 17px 33px;
                     background: none;
                     color: var(--color-dark);
@@ -124,14 +124,18 @@ body{
                     cursor: pointer;
                     transition: 0.3s;
                 }
-                & > button:hover{
+                .header_button:hover{
                     background-color: #2E2E2E;
                     color: #fafafa;
                 }
-                & > p{
+                .header_button{
                     font-size: 18px;
                     font-weight: 500;
                     margin-left: 35px;
+                }
+
+                .title__bottom_p{
+                    padding-left: 15px;
                 }
             }
         }
@@ -139,11 +143,11 @@ body{
         //! featureOne
     .featureOne{
         background-color: #F3F3F3;
-        height: calc(var(--index) * 12.5);
+        height: 400px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: calc(var(--index) * 1) 13%;
+        padding: 0 13%;
 
         .featureOne_block{
             width: 30%;
@@ -153,7 +157,7 @@ body{
             align-items: center;
             padding-bottom: 20px;
 
-            h4{
+            .featureOne_block__top_h4{
                 font-weight: 500;
                 padding-left: 20px;
                 font-size: 24px;
@@ -176,21 +180,20 @@ body{
             height: 35px;
         }
         .infoBlock{
-            height: calc(var(--index) * 30);
+            box-sizing: border-box;
             display: flex;
             color: var(--color-white);
-            height: calc(var(--index) * 27);
             display: flex;
             align-items: center;
-            padding: 0 10%;
+            padding: 100px 10%;
 
             .infoImg{
-                max-height: calc(var(--index) * 22);
+                max-width: calc(var(--index) * 22);
             }
             .infoBlock__right{
                 padding-left: 10%;
 
-                h4{
+                .infoBlock__right_h4{
                     font-size: 22px;
                     font-weight: 700;
                     padding-bottom: 20px;
@@ -207,7 +210,7 @@ body{
     }
         //! container
     .container{
-        padding: calc(var(--index) * 5) 10%;
+        padding: 150px 10%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -215,7 +218,7 @@ body{
         .containerBlock{
             width: 30%;
             background-color: #F9F9F9;
-            padding: calc(var(--index) * 1.5);
+            padding: 50px calc(var(--index) * 1.5);
             border-radius: 8px;
             border: 1px solid #000000;
 
@@ -247,7 +250,7 @@ body{
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        height: calc(var(--index) * 32);
+        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -255,21 +258,21 @@ body{
         text-align: center;
         color: var(--color-white);
 
-        h6{
+        .tagline_h6{
             font-size: 18px;
             font-weight: 300;
         }
-        h2{
+        .tagline_h2{
             font-size: 50px;
             padding: 40px 0;
             font-weight: 900;
         }
-        button{
+        .tagline_button{
             background: none;
             cursor: pointer;
             color: var(--color-white);
             border-radius: 50px;
-            padding: calc(var(--index) * 0.5) 2%;
+            padding: 20px 40px;
             border: 1px solid #ffffff;
             font-weight: 600;
             transition: 0.3s;
@@ -285,7 +288,7 @@ body{
         color: var(--color-white);
         display: flex;
         justify-content: space-between;
-        padding: calc(var(--index) * 5);
+        padding: 150px calc(var(--index) * 5);
 
         li{
             list-style-type: none;
@@ -297,7 +300,7 @@ body{
         .subscribe{
             width: 30%;
 
-            p{
+            .subscribe_p{
                 font-size: 20px;
                 color: #5f5f5f;
                 font-weight: 500;
@@ -311,13 +314,19 @@ body{
                 padding: 0 5px;
                 margin-bottom: 30px;
             }
-            .footerInp > input{
+            .footerInp_input{
+                box-sizing: border-box;
+                width: 100%;
                 background: none;
                 border: none;
                 color: #ffffff;
                 padding: 10px 25px;
                 border-radius: 40px;
                 font-size: 22px;
+            }
+            .footerInp_img{
+                width: 40px;
+                cursor: pointer;
             }
         }
     }
